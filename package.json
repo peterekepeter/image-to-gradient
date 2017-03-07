@@ -1,0 +1,11 @@
+{
+  "name": "image-to-gradient",
+  "version": "1.0.0",
+  "description": "Convert an image to a CSS gradient.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Péter Eke <peterekepeter@gmail.com>",
+  "license": "ISC"
+}
