@@ -1,16 +1,20 @@
 
 # image-to-gradient
 
-This project allows you to easily create CSS gradients from images. Currently only vertical gradients are made. 
+This project allows you to easily create CSS gradients from images. As of version 1.1.0 a gradient of any angle can be made.
 
 ![alt tag](example.png)
 
 
 ## Usage
 
-    var module = require('image-to-gradient');
+    var imageToGradient = require('image-to-gradient');
+    var options = {
+        angle:10, // gradient angle in degrees
+        steps:64  // number of steps
+    }
 
-    module.imageToGradient('testimage.jpg', null, function(err, cssGradient){
+    imageToGradient('testimage.jpg', null, function(err, cssGradient){
         if (err) throw err;
         var html = `
         <html>
