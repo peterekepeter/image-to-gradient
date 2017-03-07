@@ -1,6 +1,6 @@
 {
   "name": "image-to-gradient",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert an image to a CSS gradient.",
   "dependencies": {
     "jimp" : "*"
