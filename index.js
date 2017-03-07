@@ -77,6 +77,3 @@ exports.imageToGradient = function(imagePath, options, callback){
 
 }
 
-module.exports = imageToGradient;
-
-
