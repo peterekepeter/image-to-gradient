@@ -1,6 +1,6 @@
 {
   "name": "image-to-gradient",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Convert an image to a CSS gradient.",
   "dependencies": {
     "jimp" : "*"
@@ -10,5 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Péter Eke <peterekepeter@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type" : "git"
+  , "url" : "https://github.com/peterekepeter/image-to-gradient.git"
+  }
 }
