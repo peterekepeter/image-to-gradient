@@ -104,10 +104,8 @@ function imageToGradient(imagePath, options, callback){
 
         var gradient = reduce(image, optionSteps, optionAngle);
         normalizeGradient(gradient);
-        console.log(gradient);
         var str = gradientToCssString(gradient);
 
-       
         callback(null, str);
     });
 
