@@ -3,6 +3,8 @@
 
 This project allows you to easily create CSS gradients from images. Currently only vertical gradients are made. 
 
+![alt tag](example.png)
+
 
 ## Usage
 
