@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "testandcover": "mocha --require blanket --reporter mocha-lcov-reporter | coveralls"
   },
   "author": "Péter Eke <peterekepeter@gmail.com>",
   "license": "ISC",
@@ -16,8 +17,15 @@
     "url": "https://github.com/peterekepeter/image-to-gradient.git"
   },
   "devDependencies": {
+    "blanket": "^1.2.3",
     "coveralls": "^2.12.0",
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.3.0"
-  }
+  },
+  "config": {
+      "blanket": {
+        "pattern": [ "\\./.*.js" ],
+        "data-cover-never": [ "node_modules", "tests" ]
+      }
+    }
 }

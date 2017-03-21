@@ -65,7 +65,7 @@ function gradientToCssString(gradient){
     var str = ['linear-gradient'];
     var separator = '(';
     if(gradient.angle !== 0){
-        separator = `(${gradient.angle}deg,`;
+        separator = '('+gradient.angle+'deg';
     }
     for (i=0; i<gradient.steps; i++)
     {
@@ -73,7 +73,7 @@ function gradientToCssString(gradient){
         var green = Math.floor(gradient.green[i]);
         var blue = Math.floor(gradient.blue[i]);
         var alpha = (gradient.alpha[i]/255.0).toPrecision(2); 
-        str.push(`${separator}rgba(${red},${green},${blue},${alpha})`);
+        str.push(separator+'rgba('+red+','+green+','+blue+','+alpha+')');
         separator = ',';
     }
     str.push(')');

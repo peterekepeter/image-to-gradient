@@ -1,7 +1,8 @@
 
 # image-to-gradient
 
-[![Downloads](https://img.shields.io/npm/dt/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
+[![Downloads pe Month](https://img.shields.io/npm/dm/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
+[![Total Downloads](https://img.shields.io/npm/dt/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
 [![Build Status](https://travis-ci.org/peterekepeter/image-to-gradient.svg?branch=master)](https://travis-ci.org/peterekepeter/image-to-gradient)
 [![Coverage Status](https://coveralls.io/repos/github/peterekepeter/image-to-gradient/badge.svg?branch=master)](https://coveralls.io/github/peterekepeter/image-to-gradient?branch=master)
 
