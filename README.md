@@ -1,6 +1,9 @@
 
 # image-to-gradient
 
+[![Build Status](https://img.shields.io/npm/dt/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
+[![Build Status](https://travis-ci.org/peterekepeter/image-to-gradient.svg?branch=master)](https://travis-ci.org/peterekepeter/image-to-gradient)
+
 This project allows you to easily create CSS gradients from images. The step 
 count is variable. Any angle is supported. Alpha channel is also processed.
 
