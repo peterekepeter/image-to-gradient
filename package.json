@@ -3,16 +3,19 @@
   "version": "1.1.2",
   "description": "Convert an image to a linear CSS gradient of any angle.",
   "dependencies": {
-    "jimp" : "*"
+    "jimp": "*"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "author": "Péter Eke <peterekepeter@gmail.com>",
   "license": "ISC",
   "repository": {
-    "type" : "git"
-  , "url" : "https://github.com/peterekepeter/image-to-gradient.git"
+    "type": "git",
+    "url": "https://github.com/peterekepeter/image-to-gradient.git"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   }
 }
