@@ -5,11 +5,10 @@
 [![Total Downloads](https://img.shields.io/npm/dt/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
 [![Build Status](https://travis-ci.org/peterekepeter/image-to-gradient.svg?branch=master)](https://travis-ci.org/peterekepeter/image-to-gradient)
 [![Coverage Status](https://coveralls.io/repos/github/peterekepeter/image-to-gradient/badge.svg?branch=master)](https://coveralls.io/github/peterekepeter/image-to-gradient?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/peterekepeter/image-to-gradient/badge.svg)](https://snyk.io/test/github/peterekepeter/image-to-gradient)
 
 This project allows you to easily create CSS gradients from images. The step 
 count is variable. Any angle is supported. Alpha channel is also processed.
-
-This is my first NPM module ever.
 
 ![alt tag](example.png)
 
@@ -57,3 +56,10 @@ file with the background set to the gradient.
  - Optimise site loading speed by initially replacing images with gradients.
  - Make art! The gradients are beautiful.
  - Need a palette? Create a gradient form an image, use it as a palette.
+
+
+## Cool stuff
+
+This is my first NPM module ever. But that does not mean it's useless! If you
+find a use case let me know. If it's missing some feature that would make this
+even better, again, let me know.
