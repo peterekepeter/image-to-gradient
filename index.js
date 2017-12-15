@@ -97,7 +97,10 @@ function imageToGradient(imagePath, options, callback){
     var Jimp = require("jimp");
     
     Jimp.read("testimage.jpg", function (err, image) {
-        if (err) callback(err,null);
+        if (err) {
+            callback(err, null);
+            return;
+        }
 
         var gradient = reduce(image, optionSteps, optionAngle);
         normalizeGradient(gradient);

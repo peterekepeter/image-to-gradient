@@ -22,6 +22,34 @@ describe('image-to-gradient', function() {
             assert(imageToGradient.fmod(x,y) < y);
         }
       }
+
+    describe('callback', function () {
+        it('should execute only once', function (done) {
+            var count = 0;
+            imageToGradient('doesnotexist.png', {}, function (error, result) {
+                if (count == 0) {
+                    setTimeout(function () {
+                        assert.equal(count, 1, 'called more than once');
+                        done();
+                    }, 100);
+                }
+                count++;
+            });
+        });
+
+        it('should execute without result if image was not found', function (done) {
+            imageToGradient('doesnotexist.png', {}, function (error, result) {
+                assert.equal(result, undefined);
+                done();
+            });
+        });
+
+        it('should execute with error if image was not found', function (done) {
+            imageToGradient('doesnotexist.png', {}, function (error, result) {
+                assert.notEqual(error, undefined, 'error was undefined');
+                done();
+            });
+        });
     });
     it('should always return a positive number', function(){
         for(var x=-2; x<2; x+=0.1){
