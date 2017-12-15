@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "testandcover": "mocha --require blanket --reporter mocha-lcov-reporter | coveralls"
+    "testandcover": "mocha --reporter mocha-lcov-reporter | coveralls"
   },
   "author": "Péter Eke <peterekepeter@gmail.com>",
   "license": "ISC",
