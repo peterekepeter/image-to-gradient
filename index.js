@@ -92,11 +92,9 @@ function imageToGradient(imagePath, options, callback){
     var optionSteps = options.steps;
     if (optionSteps == null) optionSteps = 16;
 
-
-
     var Jimp = require("jimp");
-    
-    Jimp.read("testimage.jpg", function (err, image) {
+
+    Jimp.read(imagePath, function (err, image) {
         if (err) {
             callback(err, null);
             return;

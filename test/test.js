@@ -50,6 +50,13 @@ describe('image-to-gradient', function() {
                 done();
             });
         });
+
+        it('should execute with result if image exists', function (done) {
+            imageToGradient('test/images/T-FFF_000.png', {}, function (error, result) {
+                assert.notEqual(result, undefined, 'result was undefined');
+                done();
+            });
+        });
     });
     it('should always return a positive number', function(){
         for(var x=-2; x<2; x+=0.1){
