@@ -3,3 +3,4 @@ node_modules
 *.jpg
 *.log
 .coveralls.yml
+.vs
