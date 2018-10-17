@@ -1,0 +1,9 @@
+node_modules
+*.html
+*.jpg
+*.log
+.coveralls.yml
+.vs
+test
+.travis.yml
+.gitignore
