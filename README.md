@@ -52,6 +52,8 @@ file with the background set to the gradient.
 
 ## What can I use it for?
 
+[Here is an example how to speed up initial load!](https://mollwe.se/2017/12/15/hexo-lazy/)
+
  - Need a background? Create a gradient from an image.
  - Optimise site loading speed by initially replacing images with gradients.
  - Make art! The gradients are beautiful.
