@@ -45,9 +45,12 @@ file with the background set to the gradient.
             <body>
             </body>
         </html>`
-        var fs = require('fs'); 
-        fs.writeFile('output.html',html);
-    });
+        var fs = require('fs');
+        fs.writeFile('output.html', html, (err) => {
+            if (err) throw err;
+            console.log('The file has been saved!');
+        });
+});
 
 
 ## What can I use it for?
