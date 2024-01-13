@@ -3,8 +3,8 @@
 
 [![Downloads pe Month](https://img.shields.io/npm/dm/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
 [![Total Downloads](https://img.shields.io/npm/dt/image-to-gradient.svg)](https://www.npmjs.com/package/image-to-gradient)
-[![Build Status](https://travis-ci.org/peterekepeter/image-to-gradient.svg?branch=master)](https://travis-ci.org/peterekepeter/image-to-gradient)
-[![Coverage Status](https://coveralls.io/repos/github/peterekepeter/image-to-gradient/badge.svg?branch=master)](https://coveralls.io/github/peterekepeter/image-to-gradient?branch=master)
+[![Node CI](https://github.com/peterekepeter/image-to-gradient/actions/workflows/nodejs.yml/badge.svg)](https://github.com/peterekepeter/image-to-gradient/actions/workflows/nodejs.yml)
+[![Node.js Package](https://github.com/peterekepeter/image-to-gradient/actions/workflows/npmpublish.yml/badge.svg)](https://github.com/peterekepeter/image-to-gradient/actions/workflows/npmpublish.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/peterekepeter/image-to-gradient/badge.svg)](https://snyk.io/test/github/peterekepeter/image-to-gradient)
 
 This project allows you to easily create CSS gradients from images. The step 
