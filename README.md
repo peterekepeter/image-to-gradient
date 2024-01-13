@@ -22,6 +22,7 @@ pass in a callback function in the third parameter;
 The example below creates a gradient from an image and generates a dummy html
 file with the background set to the gradient.
 
+```js
     var imageToGradient = require('image-to-gradient');
 
     var options = {
@@ -51,6 +52,7 @@ file with the background set to the gradient.
             console.log('The file has been saved!');
         });
     });
+```
 
 
 ## What can I use it for?
@@ -61,10 +63,3 @@ file with the background set to the gradient.
  - Optimise site loading speed by initially replacing images with gradients.
  - Make art! The gradients are beautiful.
  - Need a palette? Create a gradient form an image, use it as a palette.
-
-
-## Cool stuff
-
-This is my first NPM module ever. But that does not mean it's useless! If you
-find a use case let me know. If it's missing some feature that would make this
-even better, again, let me know.
