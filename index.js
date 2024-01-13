@@ -1,6 +1,22 @@
 
+/**
+ * @typedef {{
+ *      steps: number,
+ *      angle: number,
+ *      red: number[],
+ *      green: number[],
+ *      blue: number[],
+ *      alpha: number[],
+ *      unit: number[],
+ * }} Gradient
+ */
 
-// create a new gradient object with fixed amount of steps
+/**
+ * Create a new gradient object with fixed amount of steps
+ * @param {*} steps 
+ * @param {*} angle 
+ * @returns {Gradient} a gradient object
+ */
 function createGradient(steps, angle) {
     var gradient = { steps: steps, red: [], green: [], blue: [], alpha: [], unit: [], angle: angle };
     for (var i = 0; i < gradient.steps; i++) {
@@ -13,7 +29,10 @@ function createGradient(steps, angle) {
     return gradient;
 }
 
-// normalize a gradient
+/**
+ * Divides all components by the weight (aka unit). Resets unit to 1
+ * @param {Gradient} gradient to modify
+ */
 function normalizeGradient(gradient) {
     // divide by unit
     for (var i = 0; i < gradient.steps; i++) {
@@ -26,7 +45,16 @@ function normalizeGradient(gradient) {
     }
 }
 
-// add color to gradient
+/**
+ * Mixes color into a given gradient step by the amount given by weight.
+ * @param {Gradient} gradient target to modify
+ * @param {number} index should be between 0 and number of steps in gradient
+ * @param {number} red 
+ * @param {number} green 
+ * @param {number} blue 
+ * @param {number} alpha 
+ * @param {number} weight 
+ */
 function addToGradient(gradient, index, red, green, blue, alpha, weight) {
     var y = index;
     gradient.red[y] += red;
@@ -36,9 +64,21 @@ function addToGradient(gradient, index, red, green, blue, alpha, weight) {
     gradient.unit[y] += weight;
 }
 
+/**
+ * Correct implementation of float modulo division.
+ * @param {*} a to divide
+ * @param {*} b divisor, expected to be positive number
+ * @returns a modulo b, always positive and between 0..b
+ */
 function fmod(a, b) { return Number((a - (Math.floor(a / b) * b))); }
 
-// reduce image to gradient
+/**
+ * reduce image to gradient
+ * @param {Jimp} image 
+ * @param {number} steps 
+ * @param {number} angle 
+ * @returns {Gradient} gradient
+ */
 function reduce(image, steps, angle) {
     var gradient = createGradient(steps, angle);
     var resized = image.resize(steps, steps);
@@ -57,7 +97,11 @@ function reduce(image, steps, angle) {
     return gradient;
 }
 
-// convert a gradient to css gradient string
+/**
+ * Converst a gradient object into CSS string
+ * @param {Gradient} gradient 
+ * @returns {string} a CSS gradient
+ */
 function gradientToCssString(gradient) {
     // build css gradient
     var str = ['linear-gradient'];
@@ -77,8 +121,12 @@ function gradientToCssString(gradient) {
     return str.join('');
 }
 
-
-
+/**
+ * Transforms an image to a CSS gradient
+ * @param {string|Buffer|Jimp} imagePath accepts anything that Jimp.read accepts
+ * @param {{angle?:number,steps?:number}|undefined} options 
+ * @param {(err:Error|null,CSSGradient:string)=>void} callback 
+ */
 function imageToGradient(imagePath, options, callback) {
 
     if (options == null) options = {};
