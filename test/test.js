@@ -1,9 +1,4 @@
 
-
-var blanket = require('blanket')({
-    pattern: '/'
-});
-
 var assert = require('assert');
 var imageToGradient = require('../');
 
