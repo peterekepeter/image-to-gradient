@@ -1,6 +1,6 @@
 {
   "name": "image-to-gradient",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Convert an image to a linear CSS gradient of any angle.",
   "dependencies": {
     "jimp": "^0.22.12"
@@ -16,7 +16,7 @@
     "url": "https://github.com/peterekepeter/image-to-gradient.git"
   },
   "devDependencies": {
-    "mocha": "^10.3.0"
+    "mocha": "^11.2.2"
   },
   "config": {
     "blanket": {
